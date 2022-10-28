@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,10 +18,9 @@ body {
 
 header {
     z-index: 1;
-    background-color: #f9003d;
+    background-color: #F9003D;
     height: 80px;
     width: 100vw;
-
 }
 
 .conteudo-header {
@@ -30,7 +28,6 @@ header {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-
 }
 
 .logo {
@@ -63,7 +60,6 @@ header {
     z-index: 2;
     top: 200px;
     right: 40px;
-
 }
 
 .whatsapp img {
@@ -71,7 +67,7 @@ header {
 }
 
 .botao {
-    background-color: #a259f7;
+    background-color: #A259F7;
     height: 45px;
     width: 150px;
     text-align: center;
@@ -79,7 +75,6 @@ header {
     font-size: 1.5em !important;
     border: solid 1px #080324;
 }
-
 .botao:hover {
     font-size: 1.6em !important;
     height: 50px;
@@ -91,7 +86,6 @@ header {
 
 .menu-barras {
     display: none;
-
 }
 
 .banner {
@@ -108,7 +102,7 @@ header {
     height: 100%;
 }
 
-.text0-banner {
+.texto-banner {
     display: flex;
     flex-direction: column;
     height: 60%;
@@ -126,7 +120,7 @@ h1 {
 
 .titulo-senai {
     font-family: 'Courier New', Courier, monospace;
-    color: #F90030;
+    color: #F9003D;
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -143,25 +137,23 @@ h1 {
 }
 
 .sobre-projetos h2 {
-    color: #F90030;
+    color: #F9003D;
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 40px;
 }
 
 .conteudo-sobre {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem-sobre {
     width: 40%;
 }
 
-
-
-.imagem-sobre{
-    width: 60%;
-
-}
-
 .texto-sobre {
-    width: 50% ;
+    width: 50%;
 }
 
 .texto-participantes {
@@ -189,7 +181,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding:  40px 0;
+    padding: 40px 0;
 }
 
 .conteudo-info {
@@ -209,10 +201,10 @@ h1 {
 }
 
 .card-info p {
-    color: #a259f7;
+    color: #A259F7;
     font-size: 22px;
     font-weight: 600;
-    border:  solid 2px #a259f7;
+    border: solid 2px #A259F7;
     width: 250px;
     padding: 30px 0;
     text-align: center;
@@ -221,7 +213,6 @@ h1 {
 .endereco {
     padding: 40px 0;
     background-image: url(../img/imagem-fundo-ranking.jpg);
-
 }
 
 .conteudo-endereco {
@@ -237,16 +228,15 @@ h1 {
 }
 
 .texto-endereco {
-    color: #a259f7;
+    color: #A259F7;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #080324;
-    border: solid 2px #a259f7;
+    background-color: #010010;
+    border: solid 2px #A259F7;
     padding: 55px 55px;
-
 }
 
 .texto-endereco p {
-    width: 480px;
+    width: 400px;
     font-size: 20px;
 }
 
@@ -269,18 +259,26 @@ h1 {
 }
 
 .container-video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 30%;
+}
+
+.video-responsivo {
     position: absolute;
     margin-top: 10px;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 100%;
+    right: 0;
+    width: 100%;
     height: 100%;
 }
 
 footer {
     height: 80px;
-    background-color: #f9003d;
+    background-color: #F9003D;
     color: white;
     display: flex;
     justify-content: center;
@@ -293,11 +291,11 @@ footer span {
     text-align: center;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     .menu-header {
         width: 60%;
     }
-    
+
     .conteudo-sobre {
         flex-direction: column;
         align-items: center;
@@ -312,7 +310,7 @@ footer span {
         margin-top: 45px;
         display: flex;
         flex-direction: column;
-        height: 450px;
+        height: 430px;
         justify-content: space-between;
     }
 
@@ -344,25 +342,23 @@ footer span {
     }
 
     .mapa-responsivo {
-        position: relative;
+        position: absolute;
         margin-top: 10px;
         top: 0;
         left: 0;
         bottom: 0;
         right: 0;
         width: 100%;
-        height: 30%;
+        height: 100%;
     }
 
-    
-    
     .container-video {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 30%;
     }
-    
+
     .video-responsivo {
         position: absolute;
         margin-top: 10px;
