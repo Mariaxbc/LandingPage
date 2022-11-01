@@ -236,10 +236,16 @@ h1 {
 }
 
 .texto-endereco p {
+<<<<<<< HEAD
+    width: auto;
+    font-size: 20px;
+}
+=======
     width: 400px;
     font-size: 20px;
 }
 
+>>>>>>> 008c25cd45092c45111d01612d21aeacf6ae7836
 .container-mapa {
     position: relative;
     overflow: hidden;
